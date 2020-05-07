@@ -1,5 +1,7 @@
 
 import { Component, Vue, Watch } from 'vue-property-decorator';
+import Todo from '../components/Todo'
+import HelloWorld from '../components/HelloWorld.vue';
 
 @Component
 export default class App extends Vue {
@@ -42,6 +44,8 @@ export default class App extends Vue {
         
         <p>支持watch：{this.msg}</p>
         <p>支持computed：{this.valueLength}</p>
+        <Todo />
+        <HelloWorld />
       </div>
 
     );
